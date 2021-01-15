@@ -1,1 +1,30 @@
-This is a test
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title> LOGIN PAGE</title>
+</head>
+<body>
+    <form>
+        <label for="pswd"> Enter Your Password: </label>
+        <input type="password" id="pswd" />
+        <input type="button" value="Submit" onclick="checkpswd()" />
+    </form>
+ 
+    <script type="text/javascript">
+        function checkpswd() {
+            var confirmpass = "12345"; //THIS IS THE PASSWORD TO GAIN ACCESS TO THE WEBSITE
+            var password = document.getElementById("pswd").value;
+            if (password == confirmpass) {
+                window.location = "http://localhost:61213/CSET%203200%20Homework%209.html";//Refers to CSET 3200 Homework 9.html file
+            }
+            else {
+                alert("The password you entered does not match.")
+            }
+        }
+    </script>
+ 
+ 
+</body>
+</html>
